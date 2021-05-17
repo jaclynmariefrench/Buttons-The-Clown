@@ -1,9 +1,10 @@
 import { ButtonsTheClown } from "./buttonsmain.js"
+import { fetchRequests } from "./dataAccess.js"
 
 const mainContainer = document.querySelector("#container")
 
 const render = () => {
-    fetchRequest().then(
+    fetchRequests().then(
         ()=> {
             mainContainer.innerHTML = ButtonsTheClown()
         }
