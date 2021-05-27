@@ -11,22 +11,29 @@ export const PartyList = () => {
                 requests.map(
                     (partyObject) => {
                         return `
-                            <div>
-                                <ul
-                                    <div></div>
-                                    Parent and Child name: ${partyObject.parentName} and ${partyObject.childName}
-                                    <div></div>
-                                    Party Type: ${partyObject.typeParty}
-                                    <div></div>
-                                    Address: ${partyObject.address}
-                                    <div></div>
-                                    Number of Children: ${partyObject.partyLength}
-                                    <div></div>
-                                    Time of Party: ${partyObject.dateOfParty}
-                                    <div></div>
-                                    Length of party: ${partyObject.partyLength}
-                                    <div></div>
-                                    <button class="request__delete" id="request--${partyObject.id}">Delete</button>
+                            <div class="party-list">
+                                <ul>
+                                    <div class="list__labels">
+                                    <b>Parent and Child name</b>: ${partyObject.parentName} and ${partyObject.childName}
+                                    </div>
+                                    <div class="list__labels">
+                                    <b>Party Type</b>: ${partyObject.typeParty}
+                                    </div>
+                                    <div class="list__labels">
+                                    <b>Address</b>: ${partyObject.address}
+                                    </div>
+                                    <div class="list__labels">
+                                    <b>Number of Children</b>: ${partyObject.partyLength}
+                                    </div>
+                                    <div class="list__labels">
+                                    <b>Time of Party</b>: ${partyObject.dateOfParty}
+                                    </div>
+                                    <div class="list__labels">
+                                    <b>Length of party</b>: ${partyObject.partyLength} hours.
+                                    </div>
+                                    <div class="list__labels">
+                                    <button class="request__delete" id="request--${partyObject.id}">Deny</button>
+                                    </div>
                                 </ul>
                             </div>
                         `

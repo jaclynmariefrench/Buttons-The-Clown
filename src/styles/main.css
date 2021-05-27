@@ -1,14 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'ZCOOL KuaiLe', cursive;    
+    background-color: pink;
+}
+
+h1,
+h2,
+h3 {
+    color: powderblue;
+    -webkit-text-stroke: .5px black;
 }
 
 .party-form {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    background-color: powderblue;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.field {
+    padding: 30px;
 }
 
 .button {
     width: 160px;
+    background-color: yellow;
+    padding: 20px;
+    font-family: 'ZCOOL KuaiLe', cursive; 
+    align-items: right;
+
 }
 
+.party-list {
+    display: flex;
+    justify-content: center;
+    background-color: powderblue;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: medium;
+    padding: 20px;
+}
+
+.list__labels {
+    padding: 20px;
+}
+
+.request__delete {
+    width: 160px;
+    background-color: yellow;
+    padding: 20px;
+    font-family: 'ZCOOL KuaiLe', cursive; 
+    align-items: right;
+}
