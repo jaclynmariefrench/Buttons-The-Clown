@@ -1,3 +1,4 @@
+import { sendRequest } from "./dataAccess.js"
 
 export const PartyForm = () => {
     let html =`
@@ -43,3 +44,31 @@ export const PartyForm = () => {
 }
 
 const mainContainer = document.querySelector("#container")
+
+mainContainer.addEventListener(
+    "click",
+    clickEvent => {
+        if (clickEvent.target.id === "submitRequest") {
+            const userPartyDescription = document.querySelector("input[name='partyDescription']").value
+            const userParentName = document.querySelector("input[name='parentName']").value
+            const userChildName = document.querySelector("input[name='childName']").value
+            const userAddress = document.querySelector("input[name='address']").value
+            const userNumberOfChildren = document.querySelector("input[name='numberOfChildren']").value
+            const userPartyLength = document.querySelector("input[name='partyLength']").value
+            const userDateOfParty = document.querySelector("input[name='dateOfParty']").value
+        
+            const dataToSendToAPI = {
+                typeParty: userPartyDescription,
+                parentName: userParentName,
+                childName: userChildName,
+                address: userAddress,
+                numberOfChildren: userNumberOfChildren,
+                partyLength: userPartyLength,
+                dateOfParty: userDateOfParty
+
+            }
+        sendRequest(dataToSendToAPI)
+        
+        }
+    }
+)

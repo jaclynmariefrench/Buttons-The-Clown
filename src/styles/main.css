@@ -1,0 +1,14 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.party-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button {
+    width: 160px;
+}
+

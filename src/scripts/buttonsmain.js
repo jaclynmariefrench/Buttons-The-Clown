@@ -1,4 +1,5 @@
 import { PartyForm } from "./PartyForm.js"
+import { PartyList } from "./PartyList.js"
 
 export const ButtonsTheClown =() => {
     return `
@@ -8,7 +9,7 @@ export const ButtonsTheClown =() => {
     </section>
     <section class="parties">
         <h2>Party List</h2>
-
+        ${PartyList()}
     </section>
     `
 }
